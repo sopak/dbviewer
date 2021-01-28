@@ -2,10 +2,10 @@
 
 * Simple example code of using Spring boot and REST API. 
 * The REST API is able to:
-    * GET/PUT/POST/DELETE connection info and persist it into embedded database. 
-    * Extract basic structure as catalogs, schemas, tables and columns.
-    * Show records of any table.
-    * Exception messages are hidden.
+  * GET/PUT/POST/DELETE connection info and persist it into embedded database. 
+  * Extract basic structure as catalogs, schemas, tables and columns.
+  * Show records of any table.
+  * Exception messages are hidden.
 
 ## Quick start
 
@@ -74,7 +74,7 @@
   
 * list tables
 
-  ```bash  
+  ```bash
   curl -v -XGET 'http://localhost:8080/connections/b00002eb-07ac-4e9f-bdae-7e417f101861/catalogs/CONNECTIONS/schemas/PUBLIC/tables' | jq .
   ```
   
@@ -90,7 +90,7 @@
   curl -v -XGET 'http://localhost:8080/connections/b00002eb-07ac-4e9f-bdae-7e417f101861/catalogs/CONNECTIONS/schemas/PUBLIC/tables/CONNECTION/records' | jq .
   ```
   
-* list records with offset and  limit
+* list records with offset and limit
 
   ```bash
   curl -v -XGET 'http://localhost:8080/connections/b00002eb-07ac-4e9f-bdae-7e417f101861/catalogs/CONNECTIONS/schemas/PUBLIC/tables/CONNECTION/records?offset=2&limit=2' | jq .

@@ -5,7 +5,7 @@
 ## Quick start
 
 * At least jre 11 has to be installed.
-* By default, port 8080 on localhost should be available.
+* By default, port 8082 on localhost should be available.
 * build with `./mvnw clean package`
 * Execute with `java -jar target/dbviewer-derby-instance-0.0.1-SNAPSHOT.jar`
 
