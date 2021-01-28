@@ -107,6 +107,12 @@
   ```bash
   curl -v -XGET 'http://localhost:8080/connections/791c1583-f208-4bf3-ac4b-e31347c46116/catalogs/mydb/schemas/SA/tables' | jq .
   ```
+
+* remote derby instance example, read records, it does not support catalogs
+
+  ```bash
+  curl -v -XGET 'http://localhost:8080/connections/791c1583-f208-4bf3-ac4b-e31347c46116/catalogs/mydb/schemas/SA/tables/connection/records' | jq .
+  ```
   
 ## Embedded tools
 * [Swagger UI](http://localhost:8080/swagger-ui)

@@ -93,10 +93,10 @@ public class DbService {
         final Statement statement = connection.createStatement();
         statement.setMaxRows(offset + limit);
 
+        connection.setCatalog(catalogName);
+        connection.setSchema(schemaName);
         return statement.executeQuery(String.format(
-                "SELECT * FROM %s.%s.%s",
-                sanitizeName(connection, catalogName),
-                sanitizeName(connection, schemaName),
+                "SELECT * FROM %s",
                 sanitizeName(connection, tableName)
         ));
     }
@@ -104,7 +104,7 @@ public class DbService {
     /**
      * dynamic tables in Statements are not safe against SQL injections, so this may prevent it a bit
      */
-    private Object sanitizeName(Connection connection, String name) throws SQLException {
+    private String sanitizeName(Connection connection, String name) throws SQLException {
         String quoteString = connection.getMetaData().getIdentifierQuoteString();
         return quoteString + name.replaceAll(quoteString, "") + quoteString;
     }
