@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for dbviewer-server" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/2.5.0-SNAPSHOT/spring-boot-configuration-processor-2.5.0-SNAPSHOT.jar" />
+        </processorPath>
+        <module name="dbviewer-server" />
+        <module name="dbviewer-derby-instance" />
+        <module name="dbviewer-h2-instance" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dbviewer-derby-instance" target="1.8" />
+      <module name="dbviewer-h2-instance" target="1.8" />
+      <module name="dbviewer-server" target="1.8" />
+      <module name="server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dbviewer-derby-instance" options="-parameters" />
+      <module name="dbviewer-h2-instance" options="-parameters" />
+      <module name="dbviewer-server" options="-parameters" />
+      <module name="server" options="-parameters" />
+    </option>
+  </component>
+</project>

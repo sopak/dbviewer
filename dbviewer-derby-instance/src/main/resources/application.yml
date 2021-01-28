@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:derby://localhost:1527/mydb;create=true
+    username: sa
+    password: sa
+    driver-class-name: org.apache.derby.jdbc.ClientDriver
+  jpa:
+    database-platform: org.hibernate.dialect.DerbyTenSevenDialect
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: true
+        format_sql: true
+
+  liquibase:
+    change-log: classpath:liquibase/changelog.yaml
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: INFO
+
+server:
+  error:
+    include-message: never
+    include-stacktrace: never
+  port: 8082

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DbViewerServer" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="cz.jcode.dbviewer.server.DbViewerServerApplication" />
+    <module name="dbviewer-server" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dbviewer-server" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

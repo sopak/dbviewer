@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: classpath:liquibase/changes/0001.init.addTableConnections.xml
+
+  - include:
+      file: classpath:liquibase/changes/0002.init.loadSampleConnectionData.xml

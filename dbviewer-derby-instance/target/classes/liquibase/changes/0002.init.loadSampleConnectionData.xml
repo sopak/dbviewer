@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet author="liquibase-docs" id="loadUpdateData-example">
+        <loadUpdateData
+                        file="classpath:liquibase/data/init.sampleConnections.csv"
+                        primaryKey="id"
+                        quotchar="'"
+                        tableName="connection"
+        >
+            <column header="id" name="id" type="UUID"/>
+            <column header="name" name="name" type="STRING"/>
+            <column header="jdbc_driver" name="jdbc_driver" type="STRING"/>
+            <column header="jdbc_url" name="jdbc_url" type="STRING"/>
+            <column header="username" name="username" type="STRING"/>
+            <column header="password" name="password" type="STRING"/>
+        </loadUpdateData>
+    </changeSet>
+</databaseChangeLog>

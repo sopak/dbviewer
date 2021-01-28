@@ -1,0 +1,7 @@
+id,name,jdbc_driver,jdbc_url,username,password
+'b00002eb-07ac-4e9f-bdae-7e417f101861','h2 local connections','org.h2.Driver','jdbc:h2:file:./connections','sa','UO1pDZlPgzfyfhQJb53nOPvSsTZxsxDK33l7wNfyxjU='
+'791c1583-f208-4bf3-ac4b-e31347c46115','h2 remote instance','org.h2.Driver','jdbc:h2:tcp://localhost:9090/mem:test','sa','UO1pDZlPgzfyfhQJb53nOPvSsTZxsxDK33l7wNfyxjU='
+'791c1583-f208-4bf3-ac4b-e31347c46116','derby remote instance','org.apache.derby.jdbc.ClientDriver','jdbc:derby://localhost:1527/mydb','sa','UO1pDZlPgzfyfhQJb53nOPvSsTZxsxDK33l7wNfyxjU='
+'b00002eb-07ac-4e9f-bdae-7e417f101864','fake racle db','oracle.jdbc.OracleDriver','jdbc:oracle:thin:@localhost:1521:orclpdb1','oracle','k4uPwJ0NE/OrvPSJbQY55k10N7q+v5iKNeYw1g6vbScb/nrsVMhTosDlTMocNTbP'
+'791c1583-f208-4bf3-ac4b-e31347c4611b','fake other h2','org.h2.Driver','jdbc:h2:file:./otherh2','sa','k4uPwJ0NE/OrvPSJbQY55k10N7q+v5iKNeYw1g6vbScb/nrsVMhTosDlTMocNTbP'
+'791c1583-f208-4bf3-ac4b-e31347c46111','fake mem h2','org.h2.Driver','jdbc:h2:mem:test','sa','k4uPwJ0NE/OrvPSJbQY55k10N7q+v5iKNeYw1g6vbScb/nrsVMhTosDlTMocNTbP'

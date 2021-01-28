@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/dbviewer.iml" filepath="$PROJECT_DIR$/.idea/dbviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbviewer-derby-instance/dbviewer-derby-instance.iml" filepath="$PROJECT_DIR$/dbviewer-derby-instance/dbviewer-derby-instance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbviewer-h2-instance/dbviewer-h2-instance.iml" filepath="$PROJECT_DIR$/dbviewer-h2-instance/dbviewer-h2-instance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbviewer-server/dbviewer-server.iml" filepath="$PROJECT_DIR$/dbviewer-server/dbviewer-server.iml" />
+    </modules>
+  </component>
+</project>
